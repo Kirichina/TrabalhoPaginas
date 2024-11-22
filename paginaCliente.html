@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Cliente</title>
+    <link rel="stylesheet" href="paginaCliente.css">
+    <link rel="stylesheet" href="paginaCliente.js">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Pinyon+Script&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h2><b>Cadastro de Clientes</b></h2>
+    </header>
+    <nav>
+        <!-- Menu Principal -->
+        <ul>
+            <li><a href="/Trabalho/Pagina Inicial/Home.html" style="color: white; text-decoration: none;">Home</a></li>
+            <li>
+            Cadastro
+                <ul>
+                    
+                    <li><a href="/Trabalho/Menu Principal/Cadastro Cliente/paginaCliente.html" style="color: white; text-decoration: none;">Clientes</a></li>
+                    <li><a href="/Trabalho/Menu Principal/Cadastro Fornecedor/paginaFornecedor.html" style="color: white; text-decoration: none;">Fornecedores</a></li>
+                    <li><a href="/Trabalho/Menu Principal/Cadastro Produtos/paginaProdutos.html" style="color: white; text-decoration: none;">Produtos</a></li>
+                    <li><a href="/Trabalho/Menu Principal/Cadastro Usuarios/paginaUsuarios.html" style="color: white; text-decoration: none;">Usuários</a></li>
+                </ul>
+            </li>
+            <li>
+                Gestão
+                <ul>
+                    <li><a href="/Trabalho/Menu Principal/Gestao/Pedidos/paginaPedidos.html" style="color: white; text-decoration: none;">Pedidos</a></li>
+                    <li><a href="/Trabalho/Menu Principal/Gestao/Financeira/paginaFinanceira.html" style="color: white; text-decoration: none;">Financeira</a></li>
+                </ul>
+            </li>
+            <li>
+                Relatórios
+                <ul>
+                    <li><a href="/Trabalho/Menu Principal/Relatorios/paginaEmissao_pdf_clientes.html" style="color: white; text-decoration: none;">Emissão PDF Clientes</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav><br/><br/>
+
+    <div class="container">
+            <div class="form-container">
+                <form>
+                    <div class="form-group">
+                        <label for="nome-cliente">Nome Completo:</label>
+                        <input type="text" id="nome-cliente" name="nome-cliente" placeholder="Digite o nome completo" required autofocus><br/><br/>
+                    
+                        <label for="cpf-cliente">CPF:</label>
+                        <input type="text" id="cpf-cliente" name="cpf-cliente" placeholder="Digite o CPF" required><br/><br/>
+                           
+                        <label for="nascimento-cliente">Data de Nascimento:</label>
+                        <input type="date" id="nascimento-cliente" name="nascimento-cliente" placeholder="Digite sua data de nascimento" required><br/><br/>
+                                                                             
+                        <label for="cep-cliente">CEP:</label>
+                        <input type="text" id="cep-cliente" name="cep-cliente" placeholder="Digite seu cep"><br/><br/>
+                    
+                        <label for="endereço-cliente">Endereço Completo (Rua, n°):</label>
+                        <input type="text" id="endereço-cliente" name="endereço-cliente" placeholder="Digite o endereço">
+                        
+                        <label for="bairro-cliente">Bairro:</label>
+                        <input type="text" id="bairro-cliente" name="bairro-cliente" placeholder="Digite seu bairro"><br/><br/>
+                    
+                        <label for="cidade-cliente">Cidade:</label>
+                        <input type="text" id="cidade-cliente" name="cidade-cliente" placeholder="Digite sua Cidade">
+                        
+                        <label for="estado-cliente">UF:</label>
+                        <input type="text" id="estado-cliente" name="estado-cliente" placeholder="Digite o Estado"><br/><br/>
+                        
+                        <label for="telefone-cliente">Celular:</label>
+                        <input type="text" id="telefone-cliente" name="telefone-cliente" placeholder="Digite seu n° celular"><br/><br/>
+                        
+                        <label for="email-cliente">Email:</label>
+                        <input type="email" id="email-cliente" name="email-cliente" placeholder="Digite seu email"><br/><br/>
+                    
+                        <button type="submit">Confirmar</button>
+                    </div>
+                
+                </form>
+            </div>
+            
+                        <!-- Tabela para listar os clientes cadastrados -->
+                            <table id="tabelaClientes">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Nome</th>
+                                        <th>E-mail</th>
+                                        <th>Telefone</th>
+                                        <th>Ações</th>
+                                    </tr>
+                                </thead>
+                            <tbody></tbody>
+                            </table>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Aishya - Todos os direitos reservados</p>
+    </footer>
+    
+</body>
+</html>
