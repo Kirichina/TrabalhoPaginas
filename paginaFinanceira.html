@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão Financeira</title>
+    <link rel="stylesheet" href="paginaFinanceira.css">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Pinyon+Script&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h2><b>Gestão Financeira</b></h2>
+    </header>
+    <nav>
+        <!-- Menu Principal -->
+        <ul>
+            <li><a href="/Trabalho/Pagina Inicial/Home.html" style="color: white; text-decoration: none;">Home</a></li>
+            <li>
+            Cadastro
+                <ul>
+                    
+                    <li><a href="/Trabalho/Menu Principal/Cadastro Cliente/paginaCliente.html" style="color: white; text-decoration: none;">Clientes</a></li>
+                    <li><a href="/Trabalho/Menu Principal/Cadastro Fornecedor/paginaFornecedor.html" style="color: white; text-decoration: none;">Fornecedores</a></li>
+                    <li><a href="/Trabalho/Menu Principal/Cadastro Produtos/paginaProdutos.html" style="color: white; text-decoration: none;">Produtos</a></li>
+                    <li><a href="/Trabalho/Menu Principal/Cadastro Usuarios/paginaUsuarios.html" style="color: white; text-decoration: none;">Usuários</a></li>
+                </ul>
+            </li>
+            <li>
+                Gestão
+                <ul>
+                    <li><a href="/Trabalho/Menu Principal/Gestao/Pedidos/paginaPedidos.html" style="color: white; text-decoration: none;">Pedidos</a></li>
+                    <li><a href="/Trabalho/Menu Principal/Gestao/Financeira/paginaFinanceira.html" style="color: white; text-decoration: none;">Financeira</a></li>
+                </ul>
+            </li>
+            <li>
+                Relatórios
+                <ul>
+                    <li><a href="/Trabalho/Menu Principal/Relatorios/paginaEmissao_pdf_clientes.html" style="color: white; text-decoration: none;">Emissão PDF Clientes</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav><br/><br/>
+
+    <div class="container">
+        <div class="form-container">
+            <h3>Pesquisar Transações Financeiras</h3>
+            <form>
+                <div class="form-group">
+                    <label for="numero-transacao">Número da Transação:</label>
+                    <input type="text" id="numero-transacao" name="numero-transacao" placeholder="Digite o número da transação">
+                </div>
+                <div class="form-group">
+                    <label for="tipo-transacao">Tipo de Transação:</label>
+                    <select id="tipo-transacao" name="tipo-transacao">
+                        <option value="entrada">Entrada</option>
+                        <option value="saida">Saída</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="data-transacao">Data da Transação:</label>
+                    <input type="date" id="data-transacao" name="data-transacao">
+                </div>
+                <button type="submit">Pesquisar</button>
+            </form>
+        </div>
+
+        <div class="form-container">
+            <h3>Lista de Transações Financeiras</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Cliente</th>
+                        <th>Data</th>
+                        <th>Tipo</th>
+                        <th>Valor</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Mark Tuan</td>
+                        <td>2024-11-20</td>
+                        <td>Entrada</td>
+                        <td>R$ 500,00</td>
+                        <td><button>Visualizar</button></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>BamBam</td>
+                        <td>2024-11-19</td>
+                        <td>Saída</td>
+                        <td>R$ 300,00</td>
+                        <td><button>Visualizar</button></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Jackson Wang</td>
+                        <td>2024-11-18</td>
+                        <td>Entrada</td>
+                        <td>R$ 1200,00</td>
+                        <td><button>Visualizar</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Aishya - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
