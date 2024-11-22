@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Fornecedor</title>
+    <link rel="stylesheet" href="paginaFornecedor.css">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Pinyon+Script&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h2><b>Cadastro de Fornecedores</b></h2>
+    </header>
+    <nav>
+        <!-- Menu Principal -->
+        <ul>
+            <li><a href="/Trabalho/Pagina Inicial/Home.html" style="color: white; text-decoration: none;">Home</a></li>
+            <li>
+            Cadastro
+                <ul>
+                    
+                    <li><a href="/Trabalho/Menu Principal/Cadastro Cliente/paginaCliente.html" style="color: white; text-decoration: none;">Clientes</a></li>
+                    <li><a href="/Trabalho/Menu Principal/Cadastro Fornecedor/paginaFornecedor.html" style="color: white; text-decoration: none;">Fornecedores</a></li>
+                    <li><a href="/Trabalho/Menu Principal/Cadastro Produtos/paginaProdutos.html" style="color: white; text-decoration: none;">Produtos</a></li>
+                    <li><a href="/Trabalho/Menu Principal/Cadastro Usuarios/paginaUsuarios.html" style="color: white; text-decoration: none;">Usuários</a></li>
+                </ul>
+            </li>
+            <li>
+                Gestão
+                <ul>
+                    <li><a href="/Trabalho/Menu Principal/Gestao/Pedidos/paginaPedidos.html" style="color: white; text-decoration: none;">Pedidos</a></li>
+                    <li><a href="/Trabalho/Menu Principal/Gestao/Financeira/paginaFinanceira.html" style="color: white; text-decoration: none;">Financeira</a></li>
+                </ul>
+            </li>
+            <li>
+                Relatórios
+                <ul>
+                    <li><a href="/Trabalho/Menu Principal/Relatorios/paginaEmissao_pdf_clientes.html" style="color: white; text-decoration: none;">Emissão PDF Clientes</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav><br/><br/>
+
+    <div class="container">
+            <div class="form-container">
+                <form>
+                    <div class="form-group">
+                        <label for="nome-fornecedor">Razão Social:</label>
+                        <input type="text" id="nome-fornecedor" name="nome-fornecedor" placeholder="Digite o nome completo" required autofocus><br/><br/>
+                    
+                        <label for="cnpj-fornecedor">CNPJ:</label>
+                        <input type="text" id="cnpj-fornecedor" name="cnpj-fornecedor" placeholder="Digite o CNPJ" required><br/><br/>
+                           
+                        <label for="fundação-fornecedor">Data de Fundação:</label>
+                        <input type="date" id="fundação-fornecedor" name="fundação-fornecedor" placeholder="Digite a data" required><br/><br/>
+                                                                             
+                        <label for="cep-fornecedor">CEP:</label>
+                        <input type="text" id="cep-fornecedor" name="cep-fornecedor" placeholder="Digite o cep"><br/><br/>
+                    
+                        <label for="endereço-fornecedor">Endereço Completo (Rua, n°):</label>
+                        <input type="text" id="endereço-fornecedor" name="endereço-fornecedor" placeholder="Digite o endereço">
+                        
+                        <label for="bairro-fornecedor">Bairro:</label>
+                        <input type="text" id="bairro-fornecedor" name="bairro-fornecedor" placeholder="Digite o bairro"><br/><br/>
+                    
+                        <label for="cidade-fornecedor">Cidade:</label>
+                        <input type="text" id="cidade-fornecedor" name="cidade-fornecedor" placeholder="Digite a Cidade">
+                        
+                        <label for="estado-fornecedor">UF:</label>
+                        <input type="text" id="estado-fornecedor" name="estado-fornecedor" placeholder="Digite o Estado"><br/><br/>
+                        
+                        <label for="telefone-fornecedor">Telefone para Contato:</label>
+                        <input type="text" id="telefone-fornecedor" name="telefone-fornecedor" placeholder="Digite o n°"><br/><br/>
+                        
+                        <label for="email-fornecedor">Email:</label>
+                        <input type="email" id="email-fornecedor" name="email-fornecedor" placeholder="Digite seu email"><br/><br/>
+                        
+                        <label for="site-fornecedor">Site:</label>
+                        <input type="url" id="site-fornecedor" name="site-fornecedor" placeholder="URL do site"><br/><br/>
+                        
+                        <button type="submit">Confirmar</button>
+                    </div>
+                
+                </form>
+            </div>
+            
+    </div>
+    <footer>
+        <p>&copy; 2024 Aishya - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
