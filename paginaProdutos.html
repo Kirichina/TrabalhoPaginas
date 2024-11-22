@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Produtos</title>
+    <link rel="stylesheet" href="paginaProduto.css">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Pinyon+Script&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h2><b>Cadastro de Produtos</b></h2>
+    </header>
+    <nav>
+        <!-- Menu Principal -->
+        <ul>
+            <li><a href="/Trabalho/Pagina Inicial/Home.html" style="color: white; text-decoration: none;">Home</a></li>
+            <li>
+            Cadastro
+                <ul>
+                    
+                    <li><a href="/Trabalho/Menu Principal/Cadastro Cliente/paginaCliente.html" style="color: white; text-decoration: none;">Clientes</a></li>
+                    <li><a href="/Trabalho/Menu Principal/Cadastro Fornecedor/paginaFornecedor.html" style="color: white; text-decoration: none;">Fornecedores</a></li>
+                    <li><a href="/Trabalho/Menu Principal/Cadastro Produtos/paginaProdutos.html" style="color: white; text-decoration: none;">Produtos</a></li>
+                    <li><a href="/Trabalho/Menu Principal/Cadastro Usuarios/paginaUsuarios.html" style="color: white; text-decoration: none;">Usuários</a></li>
+                </ul>
+            </li>
+            <li>
+                Gestão
+                <ul>
+                    <li><a href="/Trabalho/Menu Principal/Gestao/Pedidos/paginaPedidos.html" style="color: white; text-decoration: none;">Pedidos</a></li>
+                    <li><a href="/Trabalho/Menu Principal/Gestao/Financeira/paginaFinanceira.html" style="color: white; text-decoration: none;">Financeira</a></li>
+                </ul>
+            </li>
+            <li>
+                Relatórios
+                <ul>
+                    <li><a href="/Trabalho/Menu Principal/Relatorios/paginaEmissao_pdf_clientes.html" style="color: white; text-decoration: none;">Emissão PDF Clientes</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav><br/><br/>
+
+    <div class="container">
+        <h3>Adicionar Novo Produto</h3>
+        <form action="#" method="post">
+            <label for="productName">Nome do Produto:</label>
+            <input type="text" id="productName" name="productName" required><br/><br/>
+
+            <label for="productDescription">Descrição do Produto:</label>
+            <textarea id="productDescription" name="productDescription" rows="4" required></textarea><br/><br/>
+
+            <label for="productPrice">Preço (R$):</label>
+            <input type="number" id="productPrice" name="productPrice" step="0.01" required><br/><br/>
+
+            <label for="productQuantity">Quantidade:</label>
+            <input type="number" id="productQuantity" name="productQuantity" required><br/><br/>
+
+            <input type="submit" value="Cadastrar Produto">
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 Aishya - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
