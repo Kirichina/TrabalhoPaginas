@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(184, 128, 236);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+section{
+    background-color: blanchedalmond;
+    width: 250px;
+    height: 200px;
+    border: 1px solid black;
+    align-content: center;
+    justify-items: center;
+    text-align: center; 
+    transform: translateY(50%);
+   
+}
+
+label, input {
+    margin: 10px;
+}
+
+input[type="button"] {
+    padding: 8px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[type="button"]:hover {
+    background-color: #555;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+}
