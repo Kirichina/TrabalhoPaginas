@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Usuários</title>
+    <link rel="stylesheet" href="paginaUsuarios.css">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Pinyon+Script&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h2><b>Cadastro de Usuários</b></h2>
+    </header>
+    <nav>
+        <!-- Menu Principal -->
+        <ul>
+            <li><a href="/Trabalho/Pagina Inicial/Home.html" style="color: white; text-decoration: none;">Home</a></li>
+            <li>
+            Cadastro
+                <ul>
+                    
+                    <li><a href="/Trabalho/Menu Principal/Cadastro Cliente/paginaCliente.html" style="color: white; text-decoration: none;">Clientes</a></li>
+                    <li><a href="/Trabalho/Menu Principal/Cadastro Fornecedor/paginaFornecedor.html" style="color: white; text-decoration: none;">Fornecedores</a></li>
+                    <li><a href="/Trabalho/Menu Principal/Cadastro Produtos/paginaProdutos.html" style="color: white; text-decoration: none;">Produtos</a></li>
+                    <li><a href="/Trabalho/Menu Principal/Cadastro Usuarios/paginaUsuarios.html" style="color: white; text-decoration: none;">Usuários</a></li>
+                </ul>
+            </li>
+            <li>
+                Gestão
+                <ul>
+                    <li><a href="/Trabalho/Menu Principal/Gestao/Pedidos/paginaPedidos.html" style="color: white; text-decoration: none;">Pedidos</a></li>
+                    <li><a href="/Trabalho/Menu Principal/Gestao/Financeira/paginaFinanceira.html" style="color: white; text-decoration: none;">Financeira</a></li>
+                </ul>
+            </li>
+            <li>
+                Relatórios
+                <ul>
+                    <li><a href="/Trabalho/Menu Principal/Relatorios/paginaEmissao_pdf_clientes.html" style="color: white; text-decoration: none;">Emissão PDF Clientes</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav><br/><br/>
+
+    <div class="container">
+            <div class="form-container">
+                <form>
+                    <div class="form-group">
+                        <label for="nome-usuario">Nome Completo do Funcionário:</label>
+                        <input type="text" id="nome-usuario" name="nome-usuario" placeholder="Digite o nome completo" required autofocus><br/><br/>
+                    
+                        <label for="cpf-usuario">CPF:</label>
+                        <input type="text" id="cpf-usuario" name="cpf-usuario" placeholder="Digite o CPF" required><br/><br/>
+                           
+                        <label for="entrada-usuario">Data de Entrada do Funcionário:</label>
+                        <input type="date" id="entrada-usuario" name="entrada-usuario" placeholder="Digite a data" required><br/><br/>
+                                                                             
+                        <label for="cargo-usuario">Cargo:</label>
+                        <input type="text" id="cargo-usuario" name="cargo-usuario" placeholder="Digite o cargo" required><br/><br/>
+                                       
+                        <label for="telefone-usuario">Telefone para Contato:</label>
+                        <input type="text" id="telefone-usuario" name="telefone-usuario" placeholder="Digite o n°"><br/><br/>
+                        
+                        <label for="email-usuario">Email:</label>
+                        <input type="email" id="email-usuario" name="email-usuario" placeholder="email"><br/><br/>
+                                                                       
+                        <button type="submit">Confirmar</button>
+                    </div>
+                
+                </form>
+            </div>
+            
+    </div>
+    <footer>
+        <p>&copy; 2024 Aishya - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
